@@ -40,20 +40,15 @@ namespace MVCCoreAppWithIdentity
             //    })
             //    .AddEntityFrameworkStores<ApplicationDbContext>();
 
-            //AppID :561640756751768
-            //AppSecret: b8cb1ba0a23e86ac6e4a338e920a636d
             builder.Services.AddAuthentication().AddFacebook(options =>
             {
-                options.AppId = "561640756751768";
-                options.AppSecret = "b8cb1ba0a23e86ac6e4a338e920a636d";
+                options.AppId = "xxxxx";
+                options.AppSecret = "xxxxx";
             }).AddGitHub(options =>
             {
-                options.ClientId = "Iv23li7QqNxn7Kipy772";
-                options.ClientSecret = "2c538367730f47e0096f881508a5e7c71cb0a6a5";
+                options.ClientId = "xxxxx";
+                options.ClientSecret = "xxxxx";
             });
-            //AppId :1090570
-            //clientSecret :2c538367730f47e0096f881508a5e7c71cb0a6a5
-
 
             var app = builder.Build();
 
